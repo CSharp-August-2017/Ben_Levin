@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = @ViewBag.Name+"'s Wall";
+}
+<h4> Hello, @ViewBag.Name</h4>
+<h5><a href="/logout">Sign Out</a></h5>
+<form action="/createMessage" method="post">
+    <div class="input-group">
+        <label for="message">Post a message:</label>
+        <input name="message" type="text" size="140"/>
+    </div>
+    <button type="submit">Post a message</button>
+</form>
+@{
+    foreach(var message in ViewBag.Messages)
+        {
+            <h5>@message["Name"] | @message["FormDate"]</h5>
+                <p>@message["message"]</p>
+                if((@message["user_id"] == @ViewBag.ID) && (@message["TimeDelete"] == "yes"))
+                {
+                    <form action='deleteMessage/@message["id"]' method='post'>
+                        <button type='submit'>delete message</button>
+                    </form>
+                }
+                foreach(var comment in message["Comments"])
+                {
+                    <h6>@comment["Name"] | @comment["FormDate"]</h6>
+                    <p>@comment["comment"]</p>
+                }
+                <form action='/createComment/@message["id"]' method='post'>
+                    <input name="comment" type="text" size="140"/>
+                    <button type="submit">comment</button>
+                </form>
+        }
+    <a href='#top'>return to top of page</a>
+}

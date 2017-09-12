@@ -1,0 +1,57 @@
+@{
+    ViewData["Title"] = "Login & Registration";
+}
+
+<div id='register'>
+    <h3>Register:</h3>
+    @{
+        foreach(var error in ViewBag.RegErrors)
+            {
+                <p>@error</p>
+            }
+    }
+    @model wall.Models.User
+    <form asp-controller="Home" asp-action="Register" id="form" method="post">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName"/>
+        <span asp-validation-for="FirstName"></span>
+        <br>
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName"/>
+        <span asp-validation-for="LastName"></span>
+        <br>
+        <label asp-for="Email"></label>
+        <input asp-for="Email"/>
+        <span asp-validation-for="Email"></span>
+        <br>
+        <label asp-for="Password"></label>
+        <input asp-for="Password"/>
+        <span asp-validation-for="Password"></span>
+        <br>
+        <label asp-for="PasswordConfirmation"></label>
+        <input asp-for="PasswordConfirmation"/>
+        <span asp-validation-for="PasswordConfirmation"></span>
+        <br>
+        <button type="submit" id="submit">Register</button>
+    </form>
+</div>
+<div id='login'>
+    <h3>Sign In:</h3>
+    @{
+        foreach(var error in ViewBag.LogErrors)
+            {
+                <p>@error</p>
+            }
+    }
+    <form action="/login" method="post">
+        <div class="input-group">
+            <label for="Email">e-mail:</label>
+            <input name="Email" type="text"/>
+        </div>
+        <div class="input-group">
+            <label for="Password">Password:</label>
+            <input name="Password" type="password"/>
+        </div>
+        <button type="submit">Sign In</button>
+    </form>
+</div>

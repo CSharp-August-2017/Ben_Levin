@@ -1,0 +1,14 @@
+a{
+    text-decoration: none;
+}
+
+div #login{
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+div #register{
+    width: 48%;
+    display: inline-block;
+}
