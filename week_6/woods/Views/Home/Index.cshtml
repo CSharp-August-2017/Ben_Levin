@@ -21,5 +21,12 @@
                 }
         }
 </table>
-
+<form asp-controller="Home" asp-action="Sort" id="form" method="post">
+  <input type="hidden" name="Sort" value="Elevation">
+  <input type="submit" value="Sort By Elevation Change">
+</form>
+<form asp-controller="Home" asp-action="Sort" id="form" method="post">
+  <input type="hidden" name="Sort" value="Length">
+  <input type="submit" value="Sort By Trail Length">
+</form>
 <a href="/NewTrail"><button type="">Add a new trail!</button></a>

@@ -38,6 +38,25 @@ namespace woods.Factory
                 return dbConnection.Query<Trail>("SELECT * FROM trails");
             }
         }
+
+        public IEnumerable<Trail> FindAllSortLength()
+        {
+            using (IDbConnection dbConnection = Connection)
+            {
+                dbConnection.Open();
+                return dbConnection.Query<Trail>("SELECT * FROM trails ORDER BY length DESC");
+            }
+        }
+
+        public IEnumerable<Trail> FindAllSortElevation()
+        {
+            using (IDbConnection dbConnection = Connection)
+            {
+                dbConnection.Open();
+                return dbConnection.Query<Trail>("SELECT * FROM trails ORDER BY elevation DESC");
+            }
+        }
+
         public Trail FindByID(int id)
         {
             using (IDbConnection dbConnection = Connection)

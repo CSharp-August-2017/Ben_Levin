@@ -23,6 +23,23 @@ namespace woods.Controllers
             return View("Index");
         }
 
+        [HttpPost]
+        [Route("")]
+        public IActionResult Sort(string sort)
+        {
+            if(sort == "Length")
+            {
+                ViewBag.Trails = TrailFactory.FindAllSortLength();
+                return View("Index");
+            }
+            if(sort == "Elevation")
+            {
+                ViewBag.Trails = TrailFactory.FindAllSortElevation();
+                return View("Index");
+            }
+            return Redirect("Index");
+        }
+
         [HttpGet]
         [Route("NewTrail")]
         public IActionResult NewTrail()
