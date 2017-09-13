@@ -1,0 +1,17 @@
+table{
+    border: solid 2px black;
+    width: 60%;
+    margin: 1% 0% 1%;
+}
+
+th{
+    border: solid 2px black;
+    padding: 4%;
+    text-align: center;
+}
+
+td{
+    border: solid 1px black;
+    padding: 2%;
+    text-align: center;
+}

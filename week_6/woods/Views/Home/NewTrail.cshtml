@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Add a New Trail";
+}
+<h1>Add a New Trail</h1>
+<a href="/">Go Home</a>
+<div id='addTrail'>
+    @model woods.Models.Trail
+    <form asp-controller="Home" asp-action="AddTrail" id="form" method="post">
+        <label asp-for="Name"></label>
+        <input asp-for="Name"/>
+        <span asp-validation-for="Name"></span>
+        <br>
+        <label asp-for="Description"></label>
+        <input asp-for="Description"/>
+        <span asp-validation-for="Description"></span>
+        <br>
+        <label asp-for="Length">Trail Length (in Miles)</label>
+        <input asp-for="Length"/>
+        <span asp-validation-for="Length"></span>
+        <br>
+        <label asp-for="Elevation">Elevation Change (in Feet)</label>
+        <input asp-for="Elevation"/>
+        <span asp-validation-for="Elevation"></span>
+        <br>
+        <label>Latitude & Longitude</label>
+        <input asp-for="Latitude"/>
+        <input asp-for="Longitude"/>
+        <br>
+        <span asp-validation-for="Latitude"></span>
+        <br>
+        <span asp-validation-for="Longitude"></span>
+        <br>
+        <button type="submit" id="submit">Create Record!</button>
+    </form>
+</div>

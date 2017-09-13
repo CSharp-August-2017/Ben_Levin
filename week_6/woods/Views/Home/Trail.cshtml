@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = @ViewBag.Trail.Name;
+}
+
+<h1>@ViewBag.Trail.Name</h1>
+<a href="/">Go Home</a>
+<h3>Description: </h3>
+<p>@ViewBag.Trail.Description</p>
+<h3>Trail Length: </h3>
+<h5>@ViewBag.Trail.Length Miles</h5>
+<h3>Elevation Change: </h3>
+<h5>@ViewBag.Trail.Elevation Feet</h5>
+<h5>Latitude: @{@ViewBag.Trail.Latitude}º</h5>
+<h5>Longitude: @{@ViewBag.Trail.Longitude}º</h5>
+<div id="map">
+    <iframe
+    width="400"
+    height="300"
+    frameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/search?key=AIzaSyAZdk18F858EjcqwgDpksL6-yEUz5yZq3M&q=loc:@{@ViewBag.Trail.Latitude}+@{@ViewBag.Trail.Longitude}">
+    </iframe>
+</div>
+
