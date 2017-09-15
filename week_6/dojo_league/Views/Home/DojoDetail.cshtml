@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = @ViewBag.Dojo.Name;
+}
+<h2>@ViewBag.Dojo.Name</h2>
+<h5>Location: @ViewBag.Dojo.Location</h5>
+<h5>Information: @ViewBag.Dojo.Info</h5>
+<div id="CurrentMembers">
+    <h4>Current Members</h4>
+    <table>
+        <tr>
+            <th><h6>Ninja</h6></th>
+            <th><h6>Action</h6></th>
+        </tr>
+        @{
+            foreach(var ninja in @ViewBag.Dojo.ninjas)
+            {
+            <tr>
+                <td><a href="/Ninja/@{@ninja.ID}">@ninja.Name</a></td>
+                <td><a href="/Ninja/Banish/@{@ViewBag.Dojo.ID}/@{@ninja.ID}">Banish!</a></td>
+            </tr>    
+            }
+        }
+    </table>    
+</div>
+<div id="RogueMembers">
+    <h4>Rogue Ninjas</h4>
+    <table>
+        <tr>
+            <th><h6>Ninja</h6></th>
+            <th><h6>Action</h6></th>
+        </tr>
+        @{
+            foreach(var ninja in @ViewBag.Rogue.ninjas)
+            {
+                <tr>
+                    <td><a href="/Ninja/@{@ninja.ID}">@ninja.Name</a></td>
+                    <td><a href="/Ninja/Recruit/@{@ViewBag.Dojo.ID}/@{@ninja.ID}">Recruit!</a></td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+<a href="/">Go Home</a>

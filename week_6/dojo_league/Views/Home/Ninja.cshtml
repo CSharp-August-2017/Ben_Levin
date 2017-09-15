@@ -1,0 +1,62 @@
+@{
+    ViewData["Title"] = "Register A Ninja";
+}
+<div id="AllNinjas">
+    <h1>All Ninjas</h1>
+    <table>
+        <tr>
+            <th><h5>Dojo Name</h5></th>
+            <th><h5>Dojo Location</h5></th>
+        </tr>
+        @{
+            foreach(var ninja in ViewBag.Ninjas)
+            {
+                if(@ninja.dojo.ID == 1)
+                {
+                    <tr>
+                        <td><a href="/Ninja/@{@ninja.ID}">@ninja.Name</a></td>
+                        <td>@ninja.dojo.Name</td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <td><a href="/Ninja/@{@ninja.ID}">@ninja.Name</a></td>
+                        <td><a href="/Dojo/@{@ninja.dojo.ID}">@ninja.dojo.Name</a></td>
+                    </tr>
+                }
+            }
+        }
+    </table>
+</div>
+<div id="RegisterNinja">
+    <h1>Register A Ninja</h1>
+    @model dojo_league.Models.Ninja
+    <form asp-controller="Home" asp-action="ProcessNinja" method="post">
+        <label asp-for="Name"></label>
+        <input asp-for="Name"/>
+        <span asp-validation-for="Name"></span>
+        <br>
+        <label asp-for="Level">Ninjaing Level (1-10)</label>
+        <input asp-for="Level" type="number" min="1" max="10">
+        <span asp-validation-for="Level"></span>
+        <br>
+        <label asp-for="DojoID">Assigned Dojo?</label>
+        <select asp-for="DojoID">
+            @{
+                foreach(var dojo in ViewBag.Dojos)
+                {
+                    <option value="@{@dojo.ID}">@dojo.Name</option>
+                }
+            }
+        </select>
+        <span asp-validation-for="DojoID"></span>
+        <br>
+        <label asp-for="Description">Optional Description</label>
+        <input asp-for="Description"/>
+        <span asp-validation-for="Description"></span>
+        <br>
+        <button type="submit" id="submit">Add</button>
+    </form>
+</div>
+<a href="/">Go Home</a>
