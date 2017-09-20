@@ -1,0 +1,34 @@
+@{
+    ViewData["Title"] = "Reviews";
+}
+@{
+    int i = 0;
+    foreach(var review in ViewBag.AllReviews)
+    {
+        <h4>
+            Review for @review.Restaurant | @review.Stars 
+            @{
+                if(@review.Stars > 1)
+                {
+                    <text>Stars</text>;
+                }
+                else
+                {
+                    <text>Star</text>;
+                }
+            }
+        </h4>
+        <h5>Reviewer: @review.Name | @ViewBag.FormDate[i]</h5>
+        <h6>@review.ReviewText</h6>
+        <form asp-controller="Home" asp-action="Helpful" method="post">
+            <text>Did you find this helpful?</text>
+            <input type="hidden" name="id" value=@{@review.ID}>
+            <button type="submit" name="value" value="yes">yes</button>
+            <button type="submit" name="value" value="no">no</button>
+            <p>@ViewBag.YesHelp[i] users found this helpful | @ViewBag.UnHelp[i] did not</p>
+        </form>
+        i = i+1;
+    }
+}
+<a href="#top">Return to Top</a> |
+<a href="/">Add a Review</a>

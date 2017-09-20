@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Add a Review";
+}
+<h1>Write a new Review:</h1>
+<div id="AddReview">
+    @model RESTauranter.Models.Review
+    <form asp-controller="Home" asp-action="Add" method="post">
+        <label asp-for="Name"></label>
+        <input asp-for="Name"/>
+        <span asp-validation-for="Name"></span>
+        <br>
+        <label asp-for="Restaurant"></label>
+        <input asp-for="Restaurant"/>
+        <span asp-validation-for="Restaurant"></span>
+        <br>
+        <label for="Stars">Stars</label>
+        <select id="Stars" name="Stars">
+            <option value="5" selected>5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+        </select>
+        <br>
+        <label asp-for="ReviewText"></label>
+        <input asp-for="ReviewText"/>
+        <span asp-validation-for="ReviewText"></span>
+        <br>
+        <label for="Visit">Date of Visit</label>
+        <input type="date" name="Visit" value="@{@ViewBag.Today}"/>
+        <span asp-validation-for="Visit">
+            @ViewBag.Error
+        </span>
+        <br>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</div>
+<a href="/reviews">Go To Reviews</a>
