@@ -1,0 +1,39 @@
+@model bank_accounts.Models.Transaction
+@{
+    ViewData["Title"] = "Account Page";
+}
+<h3>Welcome, @ViewBag.Name | <a href="/logout">logout</a></h3>
+
+<div id="accountbalance">
+    <h5>Current Balance: <input type="text" value="@{@ViewBag.FormattedAccountSum}"/></h5>
+</div>
+
+<div id="transaction">
+    <form asp-controller="Bank" asp-action="ProcessTransaction" method="post">
+        <label asp-for="Amount">Amount (USD $)</label>
+        <input asp-for="Amount" value="0.00"/>
+        <input for="balance" type="hidden" value="@{@ViewBag.AccountSum}"></input>
+        <button type="submit">Submit</button>
+        <br>
+        <span>@ViewBag.Error</span>
+    </form>
+</div>
+<div id="accountdetails">
+    <table>
+        <tr>
+            <th><h6>Amount</h6></th>
+            <th><h6>Date</h6></th>
+        </tr>
+        @{
+            int i = 0;
+            foreach(var TransactionAmount in ViewBag.TransactionAmounts)
+            {
+                <tr>
+                    <td>@TransactionAmount</td>
+                    <td>@ViewBag.TransactionDates[i]</td>
+                </tr>
+                i = i+1;
+            }
+        }
+    </table>
+</div>    

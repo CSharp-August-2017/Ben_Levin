@@ -33,7 +33,6 @@ namespace RESTauranter.Controllers
             List<int> YesHelp = new List<int>();
             List<int> UnHelp = new List<int>();
             List<Review> AllReviews = _context.Reviews.OrderByDescending(review => review.Visit).ToList();
-            var test = AllReviews;
             foreach(var review in AllReviews)
             {
                 string FormDate = review.Visit.ToString("MMMM dd, yyyy");
