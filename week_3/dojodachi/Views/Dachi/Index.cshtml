@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" contetn="ie=edge">
+        <link rel="stylesheet" type="text/css" href="~/css/style.css">
+        <title>Dojodachi!</title>
+    </head>
+    <body>
+        <h3>Happiness: @ViewBag.Happiness</h3>
+        <h3>Fullness: @ViewBag.Fullness</h3>
+        <h3>Energy: @ViewBag.Energy</h3>
+        <h3>Meals: @ViewBag.Meals</h3>
+        <br>
+        <img src='~/images/dojodachi.png' alt='dojodachi'>
+        <h4>@ViewBag.Message</h4>
+        <br>
+        <a href='/feed'><button type=''>Feed</button></a>
+        <a href='/play'><button type=''>Play</button></a>
+        <a href='/work'><button type=''>Work</button></a>
+        <a href='/sleep'><button type=''>Sleep</button></a>
+        <br>
+        <br>
+        <a href='/reset'><button type=''>Restart</button></a>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/random_passcode/bin/Debug/netcoreapp1.1/random_passcode.deps.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/random_passcode/bin/Debug/netcoreapp1.1/random_passcode.runtimeconfig.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/random_passcode/bin/Debug/netcoreapp1.1/random_passcode.runtimeconfig.dev.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/random_passcode/bin/Debug/netcoreapp1.1/random_passcode.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/random_passcode/bin/Debug/netcoreapp1.1/random_passcode.pdb
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/random_passcode/obj/Debug/netcoreapp1.1/random_passcode.AssemblyInfo.cs
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/random_passcode/obj/Debug/netcoreapp1.1/random_passcode.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/random_passcode/obj/Debug/netcoreapp1.1/random_passcode.pdb

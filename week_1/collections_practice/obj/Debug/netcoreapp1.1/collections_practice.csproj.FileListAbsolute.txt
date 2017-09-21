@@ -1,0 +1,8 @@
+/Users/benlevin/Desktop/DojoAssignments/csharp/collections_practice/bin/Debug/netcoreapp1.1/collections_practice.deps.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/collections_practice/bin/Debug/netcoreapp1.1/collections_practice.runtimeconfig.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/collections_practice/bin/Debug/netcoreapp1.1/collections_practice.runtimeconfig.dev.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/collections_practice/bin/Debug/netcoreapp1.1/collections_practice.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/collections_practice/bin/Debug/netcoreapp1.1/collections_practice.pdb
+/Users/benlevin/Desktop/DojoAssignments/csharp/collections_practice/obj/Debug/netcoreapp1.1/collections_practice.AssemblyInfo.cs
+/Users/benlevin/Desktop/DojoAssignments/csharp/collections_practice/obj/Debug/netcoreapp1.1/collections_practice.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/collections_practice/obj/Debug/netcoreapp1.1/collections_practice.pdb

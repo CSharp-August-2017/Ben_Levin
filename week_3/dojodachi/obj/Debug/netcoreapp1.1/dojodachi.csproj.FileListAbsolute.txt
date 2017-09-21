@@ -1,0 +1,8 @@
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/dojodachi/bin/Debug/netcoreapp1.1/dojodachi.deps.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/dojodachi/bin/Debug/netcoreapp1.1/dojodachi.runtimeconfig.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/dojodachi/bin/Debug/netcoreapp1.1/dojodachi.runtimeconfig.dev.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/dojodachi/bin/Debug/netcoreapp1.1/dojodachi.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/dojodachi/bin/Debug/netcoreapp1.1/dojodachi.pdb
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/dojodachi/obj/Debug/netcoreapp1.1/dojodachi.AssemblyInfo.cs
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/dojodachi/obj/Debug/netcoreapp1.1/dojodachi.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/dojodachi/obj/Debug/netcoreapp1.1/dojodachi.pdb

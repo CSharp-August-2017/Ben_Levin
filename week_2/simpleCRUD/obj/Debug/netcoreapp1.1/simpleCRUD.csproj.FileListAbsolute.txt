@@ -1,0 +1,8 @@
+/Users/benlevin/Desktop/DojoAssignments/csharp/simpleCRUD/bin/Debug/netcoreapp1.1/simpleCRUD.deps.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/simpleCRUD/bin/Debug/netcoreapp1.1/simpleCRUD.runtimeconfig.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/simpleCRUD/bin/Debug/netcoreapp1.1/simpleCRUD.runtimeconfig.dev.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/simpleCRUD/bin/Debug/netcoreapp1.1/simpleCRUD.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/simpleCRUD/bin/Debug/netcoreapp1.1/simpleCRUD.pdb
+/Users/benlevin/Desktop/DojoAssignments/csharp/simpleCRUD/obj/Debug/netcoreapp1.1/simpleCRUD.AssemblyInfo.cs
+/Users/benlevin/Desktop/DojoAssignments/csharp/simpleCRUD/obj/Debug/netcoreapp1.1/simpleCRUD.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/simpleCRUD/obj/Debug/netcoreapp1.1/simpleCRUD.pdb

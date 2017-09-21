@@ -1,0 +1,27 @@
+/*from solution  */
+
+/*       <link rel="stylesheet" type="text/css" href="~/css/style.css"> for cshtml  */
+
+.box-div{
+    border: .04em solid black;
+    padding: 1em;
+    margin: auto;
+    width: 50%;
+}
+
+.element-group{
+    display: block;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.red{
+    color: red;
+}
+
+.inline-div{
+    display: inline-block;
+    vertical-align: top;
+}

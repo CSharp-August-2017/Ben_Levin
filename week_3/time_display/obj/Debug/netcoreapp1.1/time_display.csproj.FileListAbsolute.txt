@@ -1,0 +1,8 @@
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/time_display/bin/Debug/netcoreapp1.1/time_display.deps.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/time_display/bin/Debug/netcoreapp1.1/time_display.runtimeconfig.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/time_display/bin/Debug/netcoreapp1.1/time_display.runtimeconfig.dev.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/time_display/bin/Debug/netcoreapp1.1/time_display.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/time_display/bin/Debug/netcoreapp1.1/time_display.pdb
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/time_display/obj/Debug/netcoreapp1.1/time_display.AssemblyInfo.cs
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/time_display/obj/Debug/netcoreapp1.1/time_display.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/week_2/time_display/obj/Debug/netcoreapp1.1/time_display.pdb

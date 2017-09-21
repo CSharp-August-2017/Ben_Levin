@@ -1,0 +1,8 @@
+/Users/benlevin/Desktop/DojoAssignments/csharp/deck_of_cards/bin/Debug/netcoreapp1.1/deck_of_cards.deps.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/deck_of_cards/bin/Debug/netcoreapp1.1/deck_of_cards.runtimeconfig.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/deck_of_cards/bin/Debug/netcoreapp1.1/deck_of_cards.runtimeconfig.dev.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/deck_of_cards/bin/Debug/netcoreapp1.1/deck_of_cards.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/deck_of_cards/bin/Debug/netcoreapp1.1/deck_of_cards.pdb
+/Users/benlevin/Desktop/DojoAssignments/csharp/deck_of_cards/obj/Debug/netcoreapp1.1/deck_of_cards.AssemblyInfo.cs
+/Users/benlevin/Desktop/DojoAssignments/csharp/deck_of_cards/obj/Debug/netcoreapp1.1/deck_of_cards.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/deck_of_cards/obj/Debug/netcoreapp1.1/deck_of_cards.pdb

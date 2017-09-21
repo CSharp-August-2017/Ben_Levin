@@ -1,0 +1,8 @@
+/Users/benlevin/Desktop/DojoAssignments/csharp/puzzles/bin/Debug/netcoreapp1.1/puzzles.deps.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/puzzles/bin/Debug/netcoreapp1.1/puzzles.runtimeconfig.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/puzzles/bin/Debug/netcoreapp1.1/puzzles.runtimeconfig.dev.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/puzzles/bin/Debug/netcoreapp1.1/puzzles.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/puzzles/bin/Debug/netcoreapp1.1/puzzles.pdb
+/Users/benlevin/Desktop/DojoAssignments/csharp/puzzles/obj/Debug/netcoreapp1.1/puzzles.AssemblyInfo.cs
+/Users/benlevin/Desktop/DojoAssignments/csharp/puzzles/obj/Debug/netcoreapp1.1/puzzles.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/puzzles/obj/Debug/netcoreapp1.1/puzzles.pdb

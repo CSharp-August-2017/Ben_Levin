@@ -1,0 +1,8 @@
+/Users/benlevin/Desktop/DojoAssignments/csharp/basic_13/bin/Debug/netcoreapp1.1/basic_13.deps.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/basic_13/bin/Debug/netcoreapp1.1/basic_13.runtimeconfig.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/basic_13/bin/Debug/netcoreapp1.1/basic_13.runtimeconfig.dev.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/basic_13/bin/Debug/netcoreapp1.1/basic_13.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/basic_13/bin/Debug/netcoreapp1.1/basic_13.pdb
+/Users/benlevin/Desktop/DojoAssignments/csharp/basic_13/obj/Debug/netcoreapp1.1/basic_13.AssemblyInfo.cs
+/Users/benlevin/Desktop/DojoAssignments/csharp/basic_13/obj/Debug/netcoreapp1.1/basic_13.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/basic_13/obj/Debug/netcoreapp1.1/basic_13.pdb

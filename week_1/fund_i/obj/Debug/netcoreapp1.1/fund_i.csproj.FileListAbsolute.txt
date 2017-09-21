@@ -1,0 +1,8 @@
+/Users/benlevin/Desktop/DojoAssignments/csharp/fund_i/bin/Debug/netcoreapp1.1/fund_i.deps.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/fund_i/bin/Debug/netcoreapp1.1/fund_i.runtimeconfig.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/fund_i/bin/Debug/netcoreapp1.1/fund_i.runtimeconfig.dev.json
+/Users/benlevin/Desktop/DojoAssignments/csharp/fund_i/bin/Debug/netcoreapp1.1/fund_i.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/fund_i/bin/Debug/netcoreapp1.1/fund_i.pdb
+/Users/benlevin/Desktop/DojoAssignments/csharp/fund_i/obj/Debug/netcoreapp1.1/fund_i.AssemblyInfo.cs
+/Users/benlevin/Desktop/DojoAssignments/csharp/fund_i/obj/Debug/netcoreapp1.1/fund_i.dll
+/Users/benlevin/Desktop/DojoAssignments/csharp/fund_i/obj/Debug/netcoreapp1.1/fund_i.pdb

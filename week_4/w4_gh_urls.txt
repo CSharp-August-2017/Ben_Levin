@@ -1,0 +1,11 @@
+Week 4 | Assignment URLS
+
+PokeInfo: https://github.com/benjaminlevin/pokemon_info
+
+Practice Deployment: SITE HAS BEEN TAKEN DOWN, FREE MEMBERSHIP EXPIRED (I believe?)
+
+Quoting Dojo: https://github.com/benjaminlevin/quoting_dojo
+
+Ajax Notes: https://github.com/benjaminlevin/ajaxNotes
+
+Movie API: https://github.com/benjaminlevin/movieAPI
