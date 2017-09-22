@@ -26,7 +26,6 @@ namespace wedding_planner.Controllers
         [Route("")]
         public IActionResult Index()
         {
-            Console.WriteLine(_GoogleMap.URLString);
             if(HttpContext.Session.GetInt32("ID") != null) //redirect if user already signed in
             {
                 return Redirect("/dashboard");
