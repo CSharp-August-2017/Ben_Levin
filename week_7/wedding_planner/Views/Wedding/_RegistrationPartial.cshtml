@@ -1,0 +1,24 @@
+@model wedding_planner.Models.RegisterViewModel
+<form asp-controller="Wedding" asp-action="processregistration" method="post">
+    <label asp-for="FirstName"></label>
+    <input asp-for="FirstName"/>
+    <span asp-validation-for="FirstName"></span>
+    <br>
+    <label asp-for="LastName"></label>
+    <input asp-for="LastName"/>
+    <span asp-validation-for="LastName"></span>
+    <br>
+    <label asp-for="Email"></label>
+    <input asp-for="Email"/>
+    <span asp-validation-for="Email">@ViewBag.RegistrationError</span>
+    <br>
+    <label asp-for="Password"></label>
+    <input asp-for="Password"/>
+    <span asp-validation-for="Password"></span>
+    <br>
+    <label asp-for="PasswordConfirmation"></label>
+    <input asp-for="PasswordConfirmation"/>
+    <span asp-validation-for="PasswordConfirmation"></span>
+    <br>
+    <button type="submit" id="submit">Register</button>
+</form>

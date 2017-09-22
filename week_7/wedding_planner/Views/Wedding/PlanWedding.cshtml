@@ -1,0 +1,12 @@
+@using wedding_planner.Models
+@{
+    ViewData["Title"] = "Plan Wedding";
+}
+<h6>
+    <a href="/dashboard">Dashboard</a> |
+    <a href="/logout">Logout</a>
+</h6>
+<div id="planwedding">
+    <h1>Plan Your Wedding</h1>
+    @Html.Partial("_WeddingPartial")
+</div>

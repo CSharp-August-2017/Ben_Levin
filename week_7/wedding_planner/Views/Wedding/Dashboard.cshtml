@@ -1,0 +1,57 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<h6>
+    <a href="/logout">Logout</a>
+</h6>
+<h1>Wedding Planner Dashboard</h1>
+<div id="dashboard">
+    <table>
+        <tr>
+            <th><h5>Wedding</h5></th>
+            <th><h5>Date</h5></th>
+            <th><h5>Guests</h5></th>
+            <th><h5>Action</h5></th>
+        </tr>
+        @{
+            int i = 0;
+            foreach(var wedding in ViewBag.Weddings)
+            {
+                <tr>
+                    <td><a href="/wedding/@{@wedding.ID}">@wedding.WedderOne & @wedding.WedderTwo</a></td>
+                    <td>@ViewBag.WeddingDates[i]</td>
+                    <td>@ViewBag.GuestCount[i]</td>
+                    <td>
+                        @{
+                            if(@ViewBag.ID == @wedding.UserID)
+                            {
+                                <form action="/deletewedding" method="post">
+                                    <input type="hidden" name="weddingID" value="@{@wedding.ID}">
+                                    <button type="submit" value="submit">delete</button>
+                                </form>
+                            }
+                        }
+                        @{
+                            if(@ViewBag.RSVP[i] == 0)
+                            {
+                                <form action="/rsvp" method="post">
+                                    <input type="hidden" name="weddingID" value="@{@wedding.ID}">
+                                    <button type="submit" value="submit">rsvp</button>
+                                </form>
+                            }
+                            else if(@ViewBag.RSVP[i] == 1)
+                            {
+                                <form action="/unrsvp" method="post">
+                                    <input type="hidden" name="weddingID" value="@{@wedding.ID}">
+                                    <button type="submit" value="submit">un-rsvp</button>
+                                </form>
+                            }
+                        }
+                    </td>
+                </tr>
+                i++;
+            }
+        }
+    </table>
+</div>
+<a href="/planwedding"><button type="">New Wedding</button></a>

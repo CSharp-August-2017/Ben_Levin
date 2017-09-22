@@ -1,0 +1,12 @@
+@model wedding_planner.Models.LoginViewModel
+<form asp-controller="Wedding" asp-action="processlogin" method="post">
+    <label asp-for="LogEmail"></label>
+    <input asp-for="LogEmail"/>
+    <span asp-validation-for="LogEmail"></span>
+    <br>
+    <label asp-for="LogPassword"></label>
+    <input asp-for="LogPassword"/>
+    <span asp-validation-for="LogPassword">@ViewBag.LoginError</span>
+    <br>
+    <button type="submit" id="submit">Login</button>
+</form>

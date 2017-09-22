@@ -1,0 +1,37 @@
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    margin-left: 2%;
+}
+
+#registration{
+    display: inline-block;
+    width: 49%;
+}
+#login{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+#dashboard table th{
+    text-align: center;
+}
+
+#dashboard table td{
+    text-align: center;
+}
+
+#dashboard table button{
+    display: inline-block;
+}
+
+#map{
+    position: absolute;
+    vertical-align: top;
+    margin-left: 48%;
+    margin-top: -15%;
+}

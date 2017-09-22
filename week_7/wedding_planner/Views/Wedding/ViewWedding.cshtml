@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "View Wedding";
+}
+<h6>
+    <a href="/dashboard">Dashboard</a> |
+    <a href="/logout">Logout</a>
+</h6>
+<h3>@{@ViewBag.Wedding.WedderOne} & @{@ViewBag.Wedding.WedderTwo}'s Wedding</h3>
+<h4>Date: @ViewBag.WeddingDate</h4>
+@{
+    if(@ViewBag.Wedding.Guests.Count > 0)
+    {
+        <h5>Guests:</h5>
+        <ul>
+            @{
+                foreach(var guest in @ViewBag.Wedding.Guests)
+                {
+                    <li>
+                        @guest.FirstName @guest.LastName
+                    </li>
+                }
+            }
+        </ul>
+    }
+}
+<div id="map">
+    <iframe
+        width="400"
+        height="300"
+        frameborder="0" style="border:0"
+        src="@{@ViewBag.GoogleMap}@{@ViewBag.Wedding.WeddingAddress}">
+    </iframe>
+</div>
