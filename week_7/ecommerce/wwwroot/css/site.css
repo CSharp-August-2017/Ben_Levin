@@ -1,0 +1,160 @@
+/* ALL PAGES */
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* INDEX */
+
+#login{
+    text-align: right;
+    display: inline-block;
+    width: 47%;
+    vertical-align: top;
+}
+
+#login h2{
+    margin-right: 2%;
+}
+
+#login label{
+    margin-right: 2%;
+}
+
+#login button{
+    margin-right: 1%;
+}
+
+#registration{
+    display: inline-block;
+    width: 47%;
+}
+
+/* CUSTOMERS */
+
+#allcustomers .active{
+    background-color: #B6F8C4;
+}
+
+#allcustomers .inactive{
+    background-color: #F89393;
+}
+
+#allcustomers table td{
+    text-align: center;
+}
+
+#allcustomers table th{
+    text-align: center;
+}
+
+/* DASHBOARD */
+
+#dashcustomers{
+    display: block;
+}
+
+#dashfeed{
+    display: inline-block;
+    position: absolute;
+    padding: 0% 2%;
+    width: 80%;
+}
+
+#dashfeed .expand{ 
+    float: right;
+}
+
+#dashorders{
+    display: block;
+}
+
+#dashproducts{
+    display: block;
+}
+
+#dashproducts .product{
+    display: inline-block;
+    border: 1px solid #C0C0C0;
+    width: 150px;
+    height: 150px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 1% 0% 0% 0.5%;
+}
+
+/* NAV MENU */
+
+nav{
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+}
+
+nav a{
+    color: #303030;
+    font-weight: bold;
+    margin: 1%;
+}
+
+/* ORDERS */
+
+#allorders table td{
+    text-align: center;
+}
+
+#allorders table th{
+    text-align: center;
+}
+
+#allorders table td .active{
+    color: #00350D;
+}
+
+#allorders table td .inactive{
+    color: #A10000;
+}
+
+
+/* PRODUCTS */
+
+#allproducts{
+    display: inline-block;
+    padding-top: 5%;
+    margin-left: 2%;
+    width: 78%;
+}
+
+.product{
+    display: inline-block;
+    border: 1px solid #C0C0C0;
+    width: 180px;
+    height: 180px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+    margin: 1% 0% 0% 0.5%;
+}
+
+#productsideoptions{
+    display: inline-block;
+    width: 19%;
+    height: 100%;
+    vertical-align: top;
+    padding-top: 5%;
+}
+
+#productsideoptions span{
+    font-size: 75%;
+    color: #A10000;
+}
+
+/* PRODUCTDETAIL */
+
+#productdetail{
+    text-align: center;
+    margin-top: 3%;
+}

@@ -1,0 +1,25 @@
+@using ecommerce.Models
+@{
+    ViewData["Title"] = "Store | Products";
+}
+<div id="productsideoptions">
+    <form action="/products/" method="get">
+        <input name="search" type="text" value=""></input>
+        <br>
+        <button type="submit">Filter Products</button>
+    </form>
+    <h4>Add a New Product</h4>
+    @Html.Partial("_ProductPartial")
+</div>
+<div id="allproducts">
+    @{
+        foreach(var product in @ViewBag.Products)
+        {
+            <div class="product">
+                <img src="@product.ImageURL" alt="@product.Name" height="100" width="100">
+                <a href="/product/@{@product.ID}"><h6>@product.Name</h6></a>
+                <h6>(@product.Quantity left)</h6>
+            </div>
+        }
+    }
+</div>

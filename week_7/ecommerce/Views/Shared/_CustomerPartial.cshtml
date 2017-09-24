@@ -1,0 +1,12 @@
+@model ecommerce.Models.Customer
+<form asp-controller="EC" asp-action="addcustomer" method="post">
+    <label asp-for="FirstName"></label>
+    <input asp-for="FirstName"/>
+    <span asp-validation-for="FirstName"></span>
+    <label asp-for="LastName"></label>
+    <input asp-for="LastName"/>
+    <span asp-validation-for="LastName"></span>
+    <br>
+    <button type="submit">Add Customer</button>
+    <span>@ViewBag.CustomerError</span>
+</form>

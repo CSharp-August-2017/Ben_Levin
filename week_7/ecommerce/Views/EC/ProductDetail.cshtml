@@ -1,0 +1,10 @@
+@{
+    ViewData["Title"] = @ViewBag.Product.Name;
+}
+<div id="productdetail">
+    <h4>@ViewBag.Product.Name</h4>
+    <img src="@ViewBag.Product.ImageURL" alt="@ViewBag.Product.Name" height="200" width="200">
+    <h6>(@ViewBag.Product.Quantity left)</h6>
+    <h5>Description:</h5>
+    <p>@ViewBag.Product.Description</p>
+</div>

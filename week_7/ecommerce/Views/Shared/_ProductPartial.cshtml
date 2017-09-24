@@ -1,0 +1,21 @@
+@model ecommerce.Models.Product
+<form asp-controller="EC" asp-action="addproduct" method="post">
+    <span>@ViewBag.ProductError</span>
+    <label asp-for="Name"></label>
+    <span asp-validation-for="Name"></span>
+    <input asp-for="Name"/>
+    <br>
+    <label asp-for="ImageURL"></label>
+    <span asp-validation-for="ImageURL"></span>
+    <input asp-for="ImageURL"/>
+    <br>
+    <label asp-for="Description"></label>
+    <span asp-validation-for="Description"></span>
+    <input asp-for="Description"/>
+    <br>
+    <label asp-for="Quantity"></label>
+    <span asp-validation-for="Quantity"></span>
+    <input asp-for="Quantity"/>
+    <br>
+    <button type="submit">Create Product</button>
+</form>

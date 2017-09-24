@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Store | Dashboard";
+}
+<div id="dashfeed">
+    <div id="dashproducts">
+        <h5>Products</h5>
+        @{
+            foreach(var product in @ViewBag.Products)
+            {
+                <div class="product">
+                    <img src="@product.ImageURL" alt="@product.Name" height="100" width="100">
+                    <a href="/product/@{@product.ID}"><h6>@product.Name</h6></a>
+                </div>
+            }
+        }
+        <br>
+        <a href="/products" class="expand">show all products...</a>    
+    </div>
+    <br>
+    <div id="dashorders">
+        <h5>Recent Orders</h5>
+        <ul>
+            @{
+
+                foreach(var order in @ViewBag.Orders)
+                {
+                    <li>@{@order.CustomerName} purchased @{@order.ProductQuantity} units of @{@order.ProductName} (@{@order.HoursAgo} hours ago)</li>
+                }
+            }
+        </ul>
+        <a href="/orders" class="expand">show all orders...</a>
+    </div>
+    <div id="dashcustomers">
+        <h5>New Customers</h5>
+        <ul>
+            @{
+
+                foreach(var customer in @ViewBag.Customers)
+                {
+                    <li>@{@customer.CompleteName} joined the store (@{@customer.HoursAgo} hours ago)</li>
+                }
+            }
+        </ul>
+        <a href="/customers" class="expand">show all customers...</a>
+    </div>
+</div>

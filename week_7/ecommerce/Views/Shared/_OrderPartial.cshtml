@@ -1,0 +1,27 @@
+<form action="/addorder" method="post">
+    <label>Customer</label>
+    <select name="CID">
+        @{
+            foreach(var customer in @ViewBag.Customers)
+            {
+                <option value="@{@customer.ID}">@customer.FirstName @customer.LastName</option>
+            }
+        }
+    </select>
+    <br>
+    <label>Product</label>
+    <select name="PID">
+        @{
+            foreach(var product in @ViewBag.Products)
+            {
+                <option value="@{@product.ID}">@{@product.Name} | @{@product.Quantity} available</option>
+            }
+        }
+    </select>
+    <br>
+    <label>Quantity</label>
+    <input name="PQ" value="1" type="text"/>
+    <span>@ViewBag.OrderError</span>
+    <br>
+    <button type="submit">Submit Order</button>
+</form>

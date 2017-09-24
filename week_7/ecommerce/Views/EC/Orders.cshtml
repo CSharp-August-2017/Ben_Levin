@@ -1,0 +1,43 @@
+@using ecommerce.Models
+@{
+    ViewData["Title"] = "Store | Orders";
+}
+<div id="addorder">
+    <h4>Create a New Order</h4>
+    @Html.Partial("_OrderPartial")
+</div>
+<div id="allorders">
+    <h4>All Past Orders</h4>
+    <form action="/orders/" method="get">
+        <input name="search" type="text" value=""></input>
+        <button type="submit">Filter Orders</button>
+    </form>
+    <table>
+        <tr>
+            <th>Customer Name</th>
+            <th>Product</th>
+            <th>Quanity</th>
+            <th>Date</th>
+        </tr>
+        @{
+            foreach(var order in @ViewBag.Orders)
+            {
+                <tr>
+                    @{
+                        if(@order.CustomerStatus == 1)
+                        {
+                            <td><text class="active">@order.CustomerName</text></td>
+                        }
+                        else if(@order.CustomerStatus == 0)
+                        {
+                            <td><text class="inactive">@order.CustomerName [inactive]</text></td>
+                        }
+                    }
+                    <td>@order.ProductName</td>
+                    <td>@order.ProductQuantity</td>
+                    <td>@order.Date</td>
+                </tr>
+            }
+        }
+    </table>
+</div>

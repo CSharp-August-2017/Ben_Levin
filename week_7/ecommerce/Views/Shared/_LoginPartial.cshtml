@@ -1,0 +1,12 @@
+@model ecommerce.Models.LoginViewModel
+<form asp-controller="EC" asp-action="login" method="post">
+    <label asp-for="LogEmail"></label>
+    <span asp-validation-for="LogEmail"></span>
+    <input asp-for="LogEmail"/>
+    <br>
+    <label asp-for="LogPassword"></label>
+    <span asp-validation-for="LogPassword">@ViewBag.LoginError</span>
+    <input asp-for="LogPassword"/>
+    <br>
+    <button type="submit">Login</button>
+</form>

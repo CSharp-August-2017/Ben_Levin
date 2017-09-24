@@ -1,0 +1,49 @@
+@using ecommerce.Models
+@{
+    ViewData["Title"] = "Store | Customers";
+}
+<div id="addcustomer">
+    <h4>Add a New Customer</h4>
+    @Html.Partial("_CustomerPartial")
+</div>
+<div id="allcustomers">
+    <h4>Existing Customers</h4>
+    <form action="/customers/" method="get">
+        <input name="search" type="text" value=""></input>
+        <button type="submit">Filter Customers</button>
+    </form>
+    <table>
+        <tr>
+            <th>Customer Name</th>
+            <th>Date Created</th>
+            <th>Customer Status</th>
+        </tr>
+        @{
+            foreach(var customer in @ViewBag.Customers)
+            {
+                <tr>
+                    <td>@customer.CompleteName</td>
+                    <td>@customer.Date</td>
+                    @{
+                        if(@customer.Status == 0)
+                        {
+                        <td>
+                            <a href="/customer/@{@customer.ID}/@{@customer.Status}">
+                                <button type="" class="inactive">INACTIVE</button>
+                            </a>
+                        </td>
+                        }
+                        if(@customer.Status == 1)
+                        {
+                        <td>
+                            <a href="/customer/@{@customer.ID}/@{@customer.Status}">
+                                <button type="" class="active">ACTIVE</button>
+                            </a>
+                        </td>
+                        }
+                    }
+                </tr>
+            }
+        }
+    </table>
+</div>
