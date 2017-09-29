@@ -1,0 +1,9 @@
+@using user_dash.Models
+@{
+    ViewData["Title"] = "Remove | "+@ViewBag.User.FullName;
+}
+<h3>Are you sure you want to remove @ViewBag.User.FullName?</h3>
+<form action="/users/remove" method="post">
+    <input type="hidden" name="UID" value="@ViewBag.User.ID"/>
+    <button type="submit">Yes</button>
+</form>

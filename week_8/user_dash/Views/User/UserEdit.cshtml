@@ -1,0 +1,15 @@
+@using user_dash.Models
+@{
+    ViewData["Title"] = "Edit | "+@ViewBag.User.FullName;
+}
+<h4>Edit Information</h4>
+    @Html.Partial("_UserInfoPartial")
+<h4>Change Password</h4>
+    @Html.Partial("_UserPasswordPartial")
+@{
+    if(@ViewBag.User.ID == @ViewBag.ID)
+    {
+        <h4>Edit Description</h4>
+            @Html.Partial("_UserDescriptionPartial")
+    }
+}

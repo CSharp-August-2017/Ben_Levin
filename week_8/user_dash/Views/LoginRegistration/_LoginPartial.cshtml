@@ -1,0 +1,14 @@
+@model user_dash.Models.LoginSendModel
+<form asp-controller="LoginRegistration" asp-action="login" method="post">
+    <label asp-for="LogEmail"></label>
+    <input asp-for="LogEmail"/>
+    <span asp-validation-for="LogEmail"></span>
+    <br>
+    <label asp-for="LogPassword"></label>
+    <input asp-for="LogPassword"/>
+    <span asp-validation-for="LogPassword">@ViewBag.LoginError</span>
+    <br>
+    <button type="submit">Login</button>
+    <br>
+    <a href="/register">Don't have an account? Register.</a>
+</form>

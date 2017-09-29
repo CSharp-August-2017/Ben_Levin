@@ -1,0 +1,23 @@
+@model user_dash.Models.UserRenderModel
+<h4>All Users</h4>
+<table>
+    <tr>
+        <th><h5>ID</h5></th>
+        <th><h5>Name</h5></th>
+        <th><h5>E-mail Address</h5></th>
+        <th><h5>Created At</h5></th>
+        <th><h5>User Level</h5></th>
+    </tr>
+    @{
+        foreach(var user in @ViewBag.Users)
+        {
+            <tr>
+                <td>@user.ID</td>
+                <td><a href="/users/show/@{@user.ID}">@user.FullName</a></td>
+                <td>@user.Email</td>
+                <td>@user.CreatedDate</td>
+                <td>@user.AdminLevel</td>
+            </tr>
+        }
+    }
+</table>

@@ -1,0 +1,25 @@
+@model user_dash.Models.RegisterSendModel
+<form asp-controller="LoginRegistration" asp-action="register" method="post">
+    <label asp-for="RegFirstName"></label>
+    <input asp-for="RegFirstName"/>
+    <span asp-validation-for="RegFirstName"></span>
+    <br>
+    <label asp-for="RegLastName"></label>
+    <input asp-for="RegLastName"/>
+    <span asp-validation-for="RegLastName"></span>
+    <br>
+    <label asp-for="RegEmail"></label>
+    <input asp-for="RegEmail"/>
+    <span asp-validation-for="RegEmail">@ViewBag.RegistrationError</span>
+    <br>
+    <label asp-for="RegPassword"></label>
+    <input asp-for="RegPassword"/>
+    <span asp-validation-for="RegPassword"></span>
+    <br>
+    <label asp-for="RegPasswordConfirmation"></label>
+    <input asp-for="RegPasswordConfirmation"/>
+    <span asp-validation-for="RegPasswordConfirmation"></span>
+    <br>
+    <button type="submit">Register</button>
+    <br>
+</form>

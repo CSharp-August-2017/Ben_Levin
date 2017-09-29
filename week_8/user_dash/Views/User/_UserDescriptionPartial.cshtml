@@ -1,0 +1,10 @@
+@model user_dash.Models.UserEditDescriptionSendModel
+<form asp-controller="User" asp-action="updatedescription" method="post">
+    <label asp-for="EdDescription"></label>
+    <input asp-for="EdDescription" value="@{@ViewBag.User.Description}"/>
+    <span asp-validation-for="EdDescription"></span>
+    <input asp-for="ID" value="@{@ViewBag.User.ID}" type="hidden"/>
+    <br>
+    <button type="submit">Save</button>
+    <br>
+</form>

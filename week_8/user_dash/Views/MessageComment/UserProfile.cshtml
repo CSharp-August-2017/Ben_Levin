@@ -1,0 +1,39 @@
+@using user_dash.Models
+@{
+    ViewData["Title"] = @ViewBag.User.FullName;
+}
+<h3>
+    @ViewBag.User.FullName
+    @{
+        if(@ViewBag.ID == @ViewBag.User.ID)
+        {
+            <text>(</text><a href="/users/edit/@{@ViewBag.ID}">edit</a><text>)</text>
+        }
+    }
+</h3>
+<h5>Registered at: @ViewBag.User.CreatedDate</h5>
+<h5>E-mail: @ViewBag.User.Email</h5>
+<h5>Description: @ViewBag.User.Description</h5>
+@Html.Partial("_MessagePartial")
+@{
+    foreach(var message in @ViewBag.Messages)
+    {
+        <h5><b>@message.Author wrote | </b>@message.TimePast</h5>
+        <p>@message.Content</p>
+            foreach(var comment in message.Comments)
+            {
+                <h6><b>@comment.Author | </b>@comment.TimePast</h6>
+                <p>@comment.Content</p>
+            }
+            @model user_dash.Models.CommentSendModel
+            <form asp-controller="MessageComment" asp-action="newcomment" method="post">
+                <label asp-for="CContent"></label>
+                <input asp-for="CContent"/>
+                <input asp-for="AuthorID" type="hidden" value="@{@ViewBag.ID}"/>
+                <input asp-for="MessageID" type="hidden" value="@{@message.ID}"/>
+                <input asp-for="UserID" type="hidden" value="@{@ViewBag.User.ID}"/>
+                <button type="submit">Add Comment</button>
+                <span asp-validation-for="CContent"></span>
+            </form>
+    }
+}

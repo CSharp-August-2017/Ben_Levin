@@ -1,0 +1,45 @@
+@model user_dash.Models.UserRenderModel
+<h4>Manage Users</h4>
+<table>
+    <tr>
+        <th><h5>ID</h5></th>
+        <th><h5>Name</h5></th>
+        <th><h5>E-mail Address</h5></th>
+        <th><h5>Created At</h5></th>
+        <th><h5>User Level</h5></th>
+        <th><h5>Actions</h5></th>
+    </tr>
+    @{
+        foreach(var user in @ViewBag.Users)
+        {
+            if(@user.ID == @ViewBag.ID)
+            {
+            <tr>
+                <td>@user.ID</td>
+                <td><a href="/users/show/@{@user.ID}">@user.FullName</a></td>
+                <td>@user.Email</td>
+                <td>@user.CreatedDate</td>
+                <td>@user.AdminLevel</td>
+                <td>
+                    <a href="/users/edit/@{@user.ID}">edit</a>
+                </td>
+            </tr>
+            }
+            else
+            {
+            <tr>
+                <td>@user.ID</td>
+                <td><a href="/users/show/@{@user.ID}">@user.FullName</a></td>
+                <td>@user.Email</td>
+                <td>@user.CreatedDate</td>
+                <td>@user.AdminLevel</td>
+                <td>
+                    <a href="/users/edit/@{@user.ID}">edit</a> |
+                    <a href="/users/remove/@{@user.ID}">remove</a>
+                </td>
+            </tr>
+            }
+        }
+    }
+</table>
+<a href="/users/new"><button type="">Create New User</button></a>

@@ -1,0 +1,9 @@
+@model user_dash.Models.Message
+<form asp-controller="MessageComment" asp-action="newmessage" method="post">
+    <label asp-for="Content"></label>
+    <input asp-for="Content"/>
+    <input asp-for="AuthorID" type="hidden" value="@{@ViewBag.ID}"/>
+    <input asp-for="UserID" type="hidden" value="@{@ViewBag.User.ID}"/>
+    <button type="submit">Add Message</button>
+    <span asp-validation-for="Content"></span>
+</form>

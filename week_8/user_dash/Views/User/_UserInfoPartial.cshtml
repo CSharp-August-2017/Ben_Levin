@@ -1,0 +1,39 @@
+@model user_dash.Models.UserEditInfoSendModel
+<form asp-controller="User" asp-action="updateinfo" method="post">
+    <label asp-for="EdEmail"></label>
+    <input asp-for="EdEmail" value="@{@ViewBag.User.Email}"/>
+    <span asp-validation-for="EdEmail"></span>
+    <br>
+    <label asp-for="EdFirstName"></label>
+    <input asp-for="EdFirstName" value="@{@ViewBag.User.FirstName}"/>
+    <span asp-validation-for="EdFirstName"></span>
+    <br>
+    <label asp-for="EdLastName"></label>
+    <input asp-for="EdLastName" value="@{@ViewBag.User.LastName}"/>
+    <span asp-validation-for="EdLastName"></span>
+    <br>
+    @{
+        <label asp-for="EdUserLevel"></label>
+        if(@ViewBag.AdminLevel == 9)
+        {
+            if(@ViewBag.User.AdminLevel == "normal")
+            {
+                <select asp-for="EdUserLevel">
+                    <option value="5" selected>Normal</option>
+                    <option value="9">Admin</option>
+                </select>
+            }
+            else if(@ViewBag.User.AdminLevel == "admin")
+            {
+                <select asp-for="EdUserLevel">
+                    <option value="5">Normal</option>
+                    <option value="9" selected>Admin</option>
+                </select>
+            }
+            <br>
+        }
+    }
+    <input asp-for="ID" value="@{@ViewBag.User.ID}" type="hidden"/>
+    <button type="submit">Save</button>
+    <br>
+</form>

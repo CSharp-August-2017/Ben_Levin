@@ -1,0 +1,16 @@
+@using user_dash.Models
+@{
+    ViewData["Title"] = "Login";
+}
+<div id="dashboard">
+@{
+    if(@ViewBag.AdminLevel == 9)
+    {
+        @Html.Partial("_DashboardAdminPartial")
+    }
+    else
+    {
+        @Html.Partial("_DashboardUserPartial")
+    }
+}
+</div>
